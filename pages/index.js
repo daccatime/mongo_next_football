@@ -23,7 +23,7 @@ function App() {
   return (
     <div className='App'>
       <div className='container'>
-        <h1>My Repositories</h1>
+        <h1>Old premier league games </h1>
       </div>
       <div className='repo-container'>
         <ListLoading isLoading={appState.loading} repos={appState.repos} />
@@ -34,7 +34,7 @@ function App() {
           <span role='img' aria-label='love'>
             💚 xxxx
           </span>{' '}
-          with by Shedrack Akintayo
+         
         </div>
       </footer>
     </div>
