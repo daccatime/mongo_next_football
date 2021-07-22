@@ -9,10 +9,6 @@ const Footer = () =>(
         <a className="navbar-brand"> Note app </a>
     </Link>
 
-    <Link href="./new">
-        <a className="create">New</a>
-    </Link>
-
     
 
     
