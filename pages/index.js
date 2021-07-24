@@ -5,6 +5,7 @@ import Layout from '../src/components/Layout';
 
 import List from '../src/components/List';
 import withListLoading from '../src/components/withListLoading';
+
 function App() {
   const ListLoading = withListLoading(List);
   const [appState, setAppState] = useState({
@@ -25,13 +26,19 @@ function App() {
     
     <div className='App'>
      <Layout>
-      <div className='container'>
-        <h1>main index page  - Old premier league games </h1>
-      </div>
+     
+     <div className="relative h-64 m-8 overflow-hidden rounded-lg bg-red-600"> 
+  <section className="w-full md:w-9/12 xl:w-8/12">
+    <span className="font-bold uppercase tracking-widest">Atomic</span>
+    <h1 className="text-3xl lg:text-5xl font-bold text-white">
+      Tail<br/>Design
+    </h1>
+    <p className="font-bold mb-1">The Design is in the details...</p>
+    <p>Lorem ipsum dolor sit amet...</p>
+  </section>
+    </div>
       
-      <div className='repo-container'>
-        <ListLoading isLoading={appState.loading} repos={appState.repos} />
-      </div>
+      
       </Layout>
     </div>
   );
