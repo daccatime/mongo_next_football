@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 //import axios from 'axios'
-
+import Layout from '../src/components/Layout';
 
 
 import List from '../src/components/List';
@@ -24,11 +24,11 @@ function App() {
   return (
     
     <div className='App'>
-     
+     <Layout>
       <div className='container'>
         <h1>main index page  - Old premier league games </h1>
       </div>
-     
+      </Layout>
       <div className='repo-container'>
         <ListLoading isLoading={appState.loading} repos={appState.repos} />
       </div>
