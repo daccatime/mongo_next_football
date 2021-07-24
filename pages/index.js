@@ -28,11 +28,11 @@ function App() {
       <div className='container'>
         <h1>main index page  - Old premier league games </h1>
       </div>
-      </Layout>
+      
       <div className='repo-container'>
         <ListLoading isLoading={appState.loading} repos={appState.repos} />
       </div>
-     
+      </Layout>
     </div>
   );
 }
