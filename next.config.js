@@ -9,6 +9,9 @@ module.exports = {
 
 		return config
 	},
+	images: {
+		domains: ['e3.365dm.com'],
+	},
 	sassOptions: {
 		includePaths: [path.join(__dirname, 'styles')]
 	}

@@ -2,6 +2,7 @@ import Link  from 'next/link';
 import Image from 'next/image';
 
 
+
 function Header (){
     return(
     <div className = "text-right">
@@ -34,8 +35,8 @@ function Header (){
   <div className="absolute top-0 right-0 block w-7/12 h-full">
     <Image
       alt="Snowy mountain lake"
-      className="object-cover w-full h-full"
       src="https://e3.365dm.com/21/04/1600x900/skynews-bill-shankly-statue_5349546.jpg?bypass-service-worker&20210420162950"
+      layout="fill"
     />
   </div>
 </div>
