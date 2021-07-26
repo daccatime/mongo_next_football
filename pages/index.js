@@ -40,7 +40,7 @@ function App() {
       
       
       </Layout>
-      <Dashboard/>
+     
     </div>
   );
 }

@@ -1,20 +1,19 @@
 import Header from "../header";
 import Footer from "../footer";
 
-
+import Dashboard from  "../TransactionDashboard";
 
 
 
 function Layout ({children}) {
     return (
         <div>
-            <Header/>
+            <Header/>  
+            <Dashboard/>
             {children}
-
-         
-
-
+       
         <Footer/>
+       
 </div>
 
 
