@@ -3,9 +3,9 @@ import Link  from 'next/link';
 
 function Footer (){
     return(
-      <footer className="absolute right-0 bottom-0 p-6 lg:p-32">
+      <footer className="flex flex-col  justify-between relative  m-8 overflow-hidden rounded-lg  bg-black  text-red-600 bottom-0 p-6">
         
-      <p className="font-bold mb-1">Yours Truly</p>
+      <p className="font-bold mt-1">Yours Truly</p>
       <p>(JAM Stack Engineer)</p>
     </footer>
    

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 //import axios from 'axios'
 import Layout from '../src/components/Layout';
 
-
+import Dashboard from "../src/components/TransactionDashboard";
 import List from '../src/components/List';
 import withListLoading from '../src/components/withListLoading';
 
@@ -27,19 +27,20 @@ function App() {
     <div className='App'>
      <Layout>
      
-     <div className="relative h-64 m-8 overflow-hidden rounded-lg bg-red-600"> 
+     <div className="flex flex-col h-screen justify-between relative h-64 m-8 overflow-hidden rounded-lg bg-red-600"> 
   <section className="w-full md:w-9/12 xl:w-8/12">
-    <span className="font-bold uppercase tracking-widest">Atomic</span>
-    <h1 className="text-3xl lg:text-5xl font-bold text-white">
+    <span className="px-6 py-8 font-bold uppercase tracking-widest">Atomic</span>
+    <h1 className="px-6 py-8 text-3xl lg:text-5xl font-bold text-white">
       Tail<br/>Design
     </h1>
-    <p className="font-bold mb-1">The Design is in the details...</p>
-    <p>Lorem ipsum dolor sit amet...</p>
+    <p className="px-6 py-8 font-bold mb-1">The Design is in the details...</p>
+    <p className="px-6 py-8 ">Lorem ipsum dolor sit amet...</p>
   </section>
     </div>
       
       
       </Layout>
+      <Dashboard/>
     </div>
   );
 }
