@@ -1,7 +1,7 @@
 import Header from "../header";
 import Footer from "../footer";
 
-import Dashboard from  "../TransactionDashboard";
+import Dashboard from  "../Utils/TransactionDashboard";
 
 
 

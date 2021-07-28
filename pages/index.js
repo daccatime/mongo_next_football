@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
 //import axios from 'axios'
 import Layout from '../src/components/Layout';
-
-import Dashboard from "../src/components/TransactionDashboard";
 import List from '../src/components/List';
-import withListLoading from '../src/components/withListLoading';
+import withListLoading from '../src/components/Utils/withListLoading';
 
 function App() {
   const ListLoading = withListLoading(List);
@@ -27,18 +25,6 @@ function App() {
     <div className='App'>
      <Layout>
      
-     <div className="flex flex-col h-screen justify-between relative h-64 m-8 overflow-hidden rounded-lg bg-red-600"> 
-  <section className="w-full md:w-9/12 xl:w-8/12">
-    <span className="px-6 py-8 font-bold uppercase tracking-widest">Atomic</span>
-    <h1 className="px-6 py-8 text-3xl lg:text-5xl font-bold text-white">
-      Tail<br/>Design
-    </h1>
-    <p className="px-6 py-8 font-bold mb-1">The Design is in the details...</p>
-    <p className="px-6 py-8 ">Lorem ipsum dolor sit amet...</p>
-  </section>
-    </div>
-      
-      
       </Layout>
      
     </div>
