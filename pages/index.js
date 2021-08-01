@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import Layout from '../src/components/Layout';
 import List from '../src/components/List';
 import withListLoading from '../src/components/Utils/withListLoading';
+import Navbar from '../src/components/Navbar';
 
 function App() {
   const ListLoading = withListLoading(List);
@@ -23,6 +24,7 @@ function App() {
   return (
     
     <div className='App'>
+      <Navbar/>
      <Layout>
      
       </Layout>
