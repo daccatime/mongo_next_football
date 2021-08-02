@@ -5,8 +5,8 @@ import Link from 'next/link'
 export function Button() {
   return (
     <Link href='sign-up' passHref>
-      <button className="uppercase px-8 py-2 rounded-full border border-red-600 text-red-600 max-w-max shadow-sm hover:shadow-lg">button</button>
-    </Link>
+      <button className="p-2 my-2 bg-blue-500 text-white rounded-md focus:outline-none focus:ring-2 ring-blue-300 ring-offset-2">Sign Up</button>
+     </Link>
   );
 }
 

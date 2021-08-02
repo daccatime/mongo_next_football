@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Button } from './Button';
 
 import Link from 'next/link'
-
+import Image from "next/image";
 import Dropdown from './Dropdown';
 
 function Navbar() {
@@ -40,14 +40,38 @@ function Navbar() {
         <div className='menu-icon' onClick={handleClick}>
         
         </div>
+
+       
+        <div style={{ position: "relative", height: "50%" }} onClick={handleClick}>
+          <Image
+            src= '/hero.jpg'
+            alt="some pic"
+            width={50}
+      height={50}
+            
+          />
+        </div>
+     
+        <div style={{ position: "relative", height: "50%" }} onClick={handleClick}>
+          <Image
+            src= 'https://i0.wp.com/fontlot.com/wp-content/uploads/2020/05/liverpool-fc-crest-i85392.jpg?w=474&ssl=1'
+            alt="some pic"
+            width={50}
+      height={50}
+            
+          />
+        </div>
+
+
+
         <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-          <li className='nav-item'>
+          <li className=' py-8 text-red-600  hover:shadow-lg'>
             <Link href='/' className='nav-links' onClick={closeMobileMenu}>
               Home
             </Link>
           </li>
           <li
-            className='nav-item'
+            className='py-8 text-red-600  hover:shadow-lg'
             onMouseEnter={onMouseEnter}
             onMouseLeave={onMouseLeave}
           >
@@ -60,7 +84,7 @@ function Navbar() {
             </Link>
             {dropdown && <Dropdown />}
           </li>
-          <li className='nav-item'>
+          <li className='py-8   text-red-600  hover:shadow-lg'>
             <Link
               href='/products'
               className='nav-links'

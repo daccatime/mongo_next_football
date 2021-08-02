@@ -5,11 +5,13 @@ import Dashboard from  "../Utils/TransactionDashboard";
 
 
 
+
 function Layout ({children}) {
     return (
         <div>
-            <Header/>  
-            <Dashboard/>
+            <Header/> 
+            
+          
             {children}
        
         <Footer/>
