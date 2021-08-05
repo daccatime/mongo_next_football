@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 //import axios from 'axios'
-import Layout from '../../src/components/Layout';
-import List from '../../src/components/List';
-import withListLoading from '../../src/components/Utils/withListLoading';
-import Navbar from '../../src/components/Navbar';
+//import Layout from '../../src/components/Layout';
+import List from '../src/components/List';
+import withListLoading from '../src/components/Utils/withListLoading';
+//import Navbar from '../../src/components/Navbar';
 
 function App() {
   const ListLoading = withListLoading(List);
@@ -26,7 +26,7 @@ function App() {
     <div className='App'>
     
   
-     
+   
      
     </div>
   );
