@@ -3,31 +3,29 @@ import Image from "next/image";
 
 const handleClick = () => setClick(!click); 
 
-function Hero (){
+function hero (){
     return(
 <div>   
        
-<section classNameName="text-gray-600 body-font">
-  <div classNameName="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-    <div classNameName="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-      <h1 classNameName="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
+<section className="text-gray-600 body-font">
+  <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+      <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
      
       </h1>
-      <p classNameName="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
-      <div classNameName="flex justify-center">
-        <button classNameName="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-        <button classNameName="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+      <p className="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
+      <div className="flex justify-center">
+        <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
+        <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
       </div>
     </div>
-    <div classNameName="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
     <div style={{ position: "relative", height: "50%" }} onClick={handleClick}>
           <Image
-            src= 'https://i0.wp.com/fontlot.com/wp-content/uploads/2020/05/liverpool-fc-crest-i85392.jpg?w=474&ssl=1'
+            src= 'https://soccercampsinternational.com/wp-content/uploads/2015/09/img8-1-1024x768.jpg'
             alt="some pic"
-            width={50}
-      height={50}
-            
-          />
+            width={500}
+      height={500} />
         </div>
 
     </div>
@@ -38,4 +36,4 @@ function Hero (){
     )
 }
 
-export default Hero
+export default hero

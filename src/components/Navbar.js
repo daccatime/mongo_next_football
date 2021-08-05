@@ -42,7 +42,7 @@ export default function Navbar() {
     <div className="bg-gray-100">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <div className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 ">
-          <div className="text-3xl font-bold">Brand</div>
+          <div className="text-3xl font-bold">Planet Anfield</div>
           <div>
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -75,13 +75,21 @@ export default function Navbar() {
             isOpen ? "block" : "hidden"
           } md:flex flex-col md:flex-row w-screen justify-between px-3 py-4 md:py-0 items-center gap-4`}
         >
+
+<div style={{ position: "relative", height: "50%" }} onClick={handleClick}>
+          <Image
+            src= 'https://i0.wp.com/fontlot.com/wp-content/uploads/2020/05/liverpool-fc-crest-i85392.jpg?w=474&ssl=1'
+            alt="some pic"
+            width={50}
+      height={50} />
+        </div>
           <div className="md:ml-auto flex flex-wrap items-center text-base justify-center">
     
           <Link className='mr-5 hover:text-gray-900'  href='/'passHref >
               Home
             </Link>
 
-            <span className="ml-3 text-xl">Tailblocks</span>
+            <span className="ml-3 ">x</span>
 
             <Link className='ml-3  hover:text-gray-900'   href='/services' passHref   onClick={closeMobileMenu}> 
             <span className="ml-3 ">About</span>

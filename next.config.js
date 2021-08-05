@@ -10,7 +10,7 @@ module.exports = {
 		return config
 	},
 	images: {
-		domains: ['e3.365dm.com','i0.wp.com']
+		domains: ['e3.365dm.com','i0.wp.com','soccercampsinternational.com']
 	},
 	sassOptions: {
 		includePaths: [path.join(__dirname, 'styles')]
