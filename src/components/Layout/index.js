@@ -11,11 +11,8 @@ function Layout ({children}) {
     return (
         <div>
             <Header/> 
-          <Hero/>
-
-          
+              <Hero/>
             {children}
-       
         <Footer/>
        
 </div>
