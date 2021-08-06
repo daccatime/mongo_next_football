@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from "next/image";
 import Dropdown from './Dropdown';
   import { Menu } from '@headlessui/react'
+import NavDropdown from "./Utils/Navdropdown";
 
 const handleClick = () => setClick(!click);
 const closeMobileMenu = () => setClick(false);
@@ -83,44 +84,47 @@ export default function Navbar() {
             width={50}
       height={50} />
         </div>
-          <div className="md:ml-auto flex flex-wrap items-center text-base justify-center">
+          <div className="md:ml-auto flex flex-wrap items-left    text-base justify-left">
     
           <Link className='mr-5 hover:text-gray-900'  href='/'passHref >
-              Home
+          <span className="ml-5 px-5 py-5">Home</span>
             </Link>
 
-            <span className="ml-3 ">x</span>
+            <Link className='mr-5 hover:text-gray-900'  href='/'passHref >
+          <span className="ml-5 px-5 py-5">Home</span>
+            </Link>
 
-            <Link className='ml-3  hover:text-gray-900'   href='/services' passHref   onClick={closeMobileMenu}> 
-            <span className="ml-3 ">About</span>
-              </Link>
-              <span className="ml-3 "/>
+            <Link className='mr-5 hover:text-gray-900'  href='/'passHref >
+          <span className="ml-5 px-5 py-5">Home</span>
+            </Link>
+
+            <Link className='mr-5 hover:text-gray-900'  href='/'passHref >
+          <span className="ml-5 px-5 py-5">Home</span>
+            </Link>
+
+            <Link className='mr-5 hover:text-gray-900'  href='/'passHref >
+          <span className="ml-5 px-5 py-5">Home</span>
+            </Link>
+
+            <Link className='ml-5  hover:text-gray-900'   href='/services' passHref   onClick={closeMobileMenu}> 
+            <span className="ml-5 ">About1</span>
+            </Link>
+
+            <span className="ml-5 ">ground</span>
+
+            <Link className='ml-5  hover:text-gray-900'   href='/services' passHref   onClick={closeMobileMenu}> 
+            <span className="ml-5 ">About2</span>
+            </Link>
+
+              <span className="ml-5 "/>
             <Link className=''  href='/services' passHref>
               Contact
             </Link>
           </div>
-          
-          <ul className={click ? 'flex items-center hidden space-x-8 lg:flex' : 'nav-menu'}>
-          
-          <li
-            className='py-8 '
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
-          >
-            <Link className=''
-              href='/services'
-              
-              onClick={closeMobileMenu}>
-             Services 
-            </Link>
-            {dropdown && <Dropdown />}
-          </li>
-          
-          
          
-        </ul>
 
-  ....
+  
+        <NavDropdown className=""/> 
 
 
           <Button/>
