@@ -2,8 +2,9 @@ import Header from "../header";
 import Footer from "../footer";
 
 import Dashboard from  "../Utils/TransactionDashboard";
+import Hero from "../Utils/hero";
 
-import Hero from "../hero";
+
 
 
 
@@ -11,7 +12,7 @@ function Layout ({children}) {
     return (
         <div>
             <Header/> 
-              <Hero/>
+             <Hero/>
             {children}
         <Footer/>
        
