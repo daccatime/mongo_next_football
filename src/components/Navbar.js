@@ -86,8 +86,12 @@ export default function Navbar() {
         </div>
           <div className="md:ml-auto flex flex-wrap items-left    text-base justify-left">
     
-          <Link className='mr-5 hover:text-gray-900'  href='/'passHref >
-          <span className="ml-5 px-5 py-5">Home</span>
+          <Link className='mr-5 hover:text-gray-900 hover:text-bold '  href='/'passHref >
+          <span className="ml-5 px-5 py-5 cursor-pointer  hover:text-red-600   hover:font-bold ">Home</span>
+            </Link>
+
+            <Link className='mr-5 hover:text-gray-900   hover:font-bold'  href='/'passHref >
+          <span className="ml-5 px-5 py-5  cursor-pointer  ">Home</span>
             </Link>
 
             <Link className='mr-5 hover:text-gray-900'  href='/'passHref >
@@ -99,6 +103,10 @@ export default function Navbar() {
             </Link>
 
             <Link className='mr-5 hover:text-gray-900'  href='/'passHref >
+          <span className="ml-5 px-5 py-5  cursor-pointer  ">Home</span>
+            </Link>
+
+            <Link className='mr-5 hover:text-gray-900'  href='/'passHref >
           <span className="ml-5 px-5 py-5">Home</span>
             </Link>
 
@@ -106,20 +114,7 @@ export default function Navbar() {
           <span className="ml-5 px-5 py-5">Home</span>
             </Link>
 
-            <Link className='ml-5  hover:text-gray-900'   href='/services' passHref   onClick={closeMobileMenu}> 
-            <span className="ml-5 ">About1</span>
-            </Link>
-
-            <span className="ml-5 ">ground</span>
-
-            <Link className='ml-5  hover:text-gray-900'   href='/services' passHref   onClick={closeMobileMenu}> 
-            <span className="ml-5 ">About2</span>
-            </Link>
-
-              <span className="ml-5 "/>
-            <Link className=''  href='/services' passHref>
-              Contact
-            </Link>
+            
           </div>
          
 
