@@ -3,7 +3,7 @@ import Footer from "../footer";
 
 import Dashboard from  "../Utils/TransactionDashboard";
 
-import Hero from "../../components/hero";
+import Hero from "../hero";
 
 
 
