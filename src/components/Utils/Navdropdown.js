@@ -11,9 +11,9 @@ function NavDropdown (){
         
 
     <div className="w-56 text-right  top-16 p-4 gap-7">
-      <Menu as="div" className="relative inline-block text-left">
+      <Menu as="div" className="relative inline-block text-white text-left">
         <div>
-          <Menu.Button className="inline-flex justify-center w-full px-8 py-2 text-sm font-medium text-black bg-black rounded-md bg-opacity-20 hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+          <Menu.Button className="inline-flex justify-center w-full px-8 py-2 text-sm font-medium Text-white bg-black rounded-md bg-opacity-20 hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
             Options
             <ChevronDownIcon
               className="w-5 h-5 ml-2 -mr-1 text-violet-200 hover:text-violet-100"

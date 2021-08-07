@@ -40,10 +40,10 @@ export default function Navbar() {
 
 
 
-    <div className="bg-gray-100">
+    <div className="bg-black">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <div className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 ">
-          <div className="text-3xl font-bold">Planet Anfield</div>
+        <div className="flex title-font font-medium items-center text-white mb-4 md:mb-0 ">
+          <div className="text-3xl text-white font-bold">Planet Anfield</div>
           <div>
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -86,32 +86,32 @@ export default function Navbar() {
         </div>
           <div className="md:ml-auto flex flex-wrap items-left    text-base justify-left">
     
-          <Link className='mr-5 hover:text-gray-900 hover:text-bold '  href='/'passHref >
-          <span className="ml-5 px-5 py-5 cursor-pointer  hover:text-red-600   hover:font-bold ">Home</span>
+          <Link className='mr-5 hover:text-gray-900 hover:text-bold text-white '  href='/'passHref >
+          <span className="ml-5 px-5 py-5 cursor-pointer text-white hover:text-red-600   hover:text-bold ">Home</span>
             </Link>
 
             <Link className='mr-5 hover:text-gray-900   hover:font-bold'  href='/'passHref >
-          <span className="ml-5 px-5 py-5  cursor-pointer  ">Home</span>
+          <span className= "ml-5 px-5 py-5 cursor-pointer text-white hover:text-red-600   hover:text-bold">Home</span>
             </Link>
 
             <Link className='mr-5 hover:text-gray-900'  href='/'passHref >
-          <span className="ml-5 px-5 py-5">Home</span>
+          <span className="ml-5 px-5 py-5 cursor-pointer text-white hover:text-red-600   hover:text-bold">Home</span>
             </Link>
 
             <Link className='mr-5 hover:text-gray-900'  href='/'passHref >
-          <span className="ml-5 px-5 py-5">Home</span>
+          <span className="ml-5 px-5 py-5 cursor-pointer text-white hover:text-red-600   hover:text-bold">Home</span>
+            </Link>
+
+            <Link className='ml-5 px-5 py-5 cursor-pointer text-white hover:text-red-600   hover:text-bold'  href='/'passHref >
+          <span className="ml-5 px-5 py-5 cursor-pointer text-white hover:text-red-600   hover:text-bold">Home1</span>
             </Link>
 
             <Link className='mr-5 hover:text-gray-900'  href='/'passHref >
-          <span className="ml-5 px-5 py-5  cursor-pointer  ">Home</span>
+          <span className="ml-5 px-5 py-5 cursor-pointer text-white hover:text-red-600   hover:text-bold">Home</span>
             </Link>
 
             <Link className='mr-5 hover:text-gray-900'  href='/'passHref >
-          <span className="ml-5 px-5 py-5">Home</span>
-            </Link>
-
-            <Link className='mr-5 hover:text-gray-900'  href='/'passHref >
-          <span className="ml-5 px-5 py-5">Home</span>
+          <span className="ml-5 px-5 py-5 cursor-pointer text-white hover:text-red-600   hover:text-bold">Home</span>
             </Link>
 
             
