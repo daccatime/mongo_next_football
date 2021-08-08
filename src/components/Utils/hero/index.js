@@ -2,36 +2,57 @@ import Link  from 'next/link';
 import Image from "next/image";
 
 const handleClick = () => setClick(!click); 
+import React, { useState } from 'react';
 
-function hero (){
-    return(
-<div>   
-       
-<section className="text-gray-600 body-font">
-  <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-    <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-      <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out on scucess 
-     
-      </h1>
-      <p className="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
-      <div className="flex justify-center"> this is a test 
-             </div>
-    </div>
-    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-    <div style={{ position: "relative", height: "50%" }} onClick={handleClick}>
-          <Image
-            src= 'https://soccercampsinternational.com/wp-content/uploads/2015/09/img8-1-1024x768.jpg'
+
+
+function Hero() {
+
+  const [videoModalOpen, setVideoModalOpen] = useState(false);
+
+  return (
+    <section>
+
+      {/* Illustration behind hero content https://e0.365dm.com/21/05/1600x900/skysports-sadio-mane-liverpool_5377814.jpg?20210511122928 */}
+      <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none" aria-hidden="true">
+      
+      </div>
+
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+
+        {/* Hero content */}
+        <div className="pt-32 pb-12 md:pt-40 md:pb-20">
+
+          {/* Section header */}
+          <div className="text-center pb-12 md:pb-16">
+           
+          </div>
+
+          {/* Hero image */}
+          <div>
+            <div className="relative flex justify-center mb-8" data-aos="zoom-y-out" data-aos-delay="450">
+              <div className="flex flex-col justify-center">
+              <Image
+            src= 'https://e0.365dm.com/21/05/1600x900/skysports-sadio-mane-liverpool_5377814.jpg?20210511122928'
             alt="some pic"
-            width={500}
-      height={500} />
+            width={1600}
+      height={900} />
+                 
+              </div>
+              
+            </div>
+
+            {/* Modal */}
+           
+
+          </div>
+
         </div>
 
-    </div>
-  </div>
-</section>
-   
-</div>
-    )
+      </div>
+    </section>
+  );
 }
 
-export default hero
+
+export default Hero
