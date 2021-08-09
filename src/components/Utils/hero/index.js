@@ -25,7 +25,7 @@ function Hero() {
 
           {/* Section header */}
           <div className="text-center pb-12 md:pb-16">
-           
+           <span className="text-6xl">The 2021/22 season has started</span> 
           </div>
 
           {/* Hero image */}
