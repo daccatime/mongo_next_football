@@ -7,14 +7,15 @@ const Navigation = ({}) => {
 
   return (
     
-    <nav className="flex items-center  justify-between flex-wrap p-6  bg-gray-100  ">
-  <div className="flex items-center flex-shrink-0 bg-red-600 text-white mr-6">
-    <h2>Planet Anfield</h2>
+    <nav className="flex items-center  justify-between flex-wrap p-6  bg-black text-font-body ">
+  <div className="flex items-center flex-shrink-0 bg-red-600 text-white mr-6 text-font-body">
+   
 
   </div>
   <div className="block lg:hidden">
     <button
-    className="flex items-center px-3 py-2 border rounded text-teal-200 bg-gray-300 border-teal-400 hover:text-white hover:border-white"
+    className="flex items-center px-3 py-2 border rounded text-white bg-black border-teal-400 
+    hover:text-white hover:border-white"
     onClick={() => toggleExpansion(!isExpanded)}
     >
       <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -25,20 +26,26 @@ const Navigation = ({}) => {
             isExpanded ? `block` : `hidden`
           } w-full block flex-grow lg:flex lg:items-center   lg:w-auto`}>
     <div className="text-sm lg:flex-grow">
-      <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-red-600 hover:text-white mr-4">
-        Docs
-      </a>
-      <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-red-600 hover:text-white mr-4">
-        Examples
-      </a>
-      <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-red-600 hover:text-white">
-        test
-      </a>
+    <Link className='mr-5 hover:text-gray-900 hover:text-bold text-white '  href='/'passHref >
+          <span className="block text-font-body text-bold mt-4 lg:inline-block lg:mt-0 text-red-600 hover:text-white mr-4 2xl">Home</span>
+      </Link>
+      <Link className='mr-5 hover:text-gray-900 hover:text-bold text-white '  href='/'passHref >
+          <span className="block text-font-body text-bold mt-4 lg:inline-block lg:mt-0 text-red-600 hover:text-white mr-4">Dashboard</span>
+      </Link>
+      
+      <Link className='mr-5 hover:text-gray-900 hover:text-bold text-white '  href='/'passHref >
+          <span className="block text-font-body text-bold mt-4 lg:inline-block lg:mt-0 text-red-600 hover:text-white mr-4">History</span>
+      </Link>
+      <Link className='mr-5 hover:text-gray-900 hover:text-bold text-white '  href='/'passHref >
+          <span className="block text-font-body text-bold mt-4 lg:inline-block lg:mt-0 text-red-600 hover:text-white mr-4">Anfield </span>
+      </Link>
+
+      <Link className='mr-5 hover:text-gray-900 hover:text-bold text-white '  href='/'passHref >
+          <span className="block text-font-body text-bold mt-4 lg:inline-block lg:mt-0 text-red-600 hover:text-white mr-4">About Us</span>
+      </Link>
 
     </div>
-    <div>
-      <a href="#" className="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0">Download</a>
-    </div>
+    
   </div>
 </nav>
   )

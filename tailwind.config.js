@@ -8,7 +8,12 @@ module.exports = {
 		'./src/components/**/*.js',
 		'./pages/**/*.js'],
 	theme: {
-		extend: {},
+		extend: {
+			fontFamily:{
+		body: ['Nunito']
+			}
+		},
+
 	},
 	variants: {},
 	plugins: [
